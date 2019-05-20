@@ -1,0 +1,82 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.test-border {
+  border: 1px dashed red;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  background: #CDCDCD;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed red;
+}
+img {
+  max-width: 95%;
+  height: auto;
+  border: 1px dashed red;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  background: #CDCDCD;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed red;
+}
+img {
+  max-width: 95%;
+  height: auto;
+  border: 1px dashed red;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px dashed red;
+  width: 100%;
+}
+.top h1 {
+  color: #000080;
+}
+.top a {
+  text-decoration: none;
+}
+main {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .about-text {
+  text-align: center;
+}
+main .buttons {
+  display: flex;
+  flex-direction: row;
+}
