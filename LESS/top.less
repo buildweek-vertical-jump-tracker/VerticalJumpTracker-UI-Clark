@@ -9,6 +9,7 @@
     h1 {
     color: @secondary;
     text-align: center;
+    font-size: 2rem;
     }
     nav {
         .flex-row;
@@ -19,10 +20,21 @@
         a {
             margin: 0 0.5rem;
             color: @secondary;
+            font-size: 1.25rem;
+            &:hover {
+                color: @white;
+            }
+            @media @tablet{
+                margin: 0 1.5rem;
+                font-size: 1.25rem;  
+            }
+            // @media @desktop {
+            //     font-size: 1.5rem;
+            // }
         }
         
     }
-    @media @desktop {
+    @media @desktop, @tablet {
         .flex-row;
         justify-content: space-around;
         align-items: center;

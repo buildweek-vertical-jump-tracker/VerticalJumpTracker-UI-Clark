@@ -1,8 +1,8 @@
 main {
-    position: relative;
-    padding: 1.5rem;
-    top: 3rem;
+    // position: relative;
+    // top: 3rem;
     width: 100%;
+    padding: 1.5rem;
     .flex-column;
     align-items: center;
     text-align: center;
@@ -17,11 +17,14 @@ main {
         width: 70%;
     }
     .buttons {
+        position: relative;
+        bottom: 2rem;
         .flex-row;
         // .test-border;
         justify-content: space-between;
         align-items: center;
         padding: 0.5rem;
+        margin: 1.5rem;
         .btn {
             margin: 0 1.5rem;
         }
@@ -40,5 +43,19 @@ main {
         button:hover {
             cursor: pointer;
         }
+    }
+    .email-form {
+        .flex-column;
+        // .test-border;
+        input {
+            margin: 1rem;
+        }
+        .email-name {
+            .flex-row;
+            // max-width: 33%;
+        }
+    }
+    .contact-info {
+        font-size: 1.2rem;
     }
 }
