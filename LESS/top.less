@@ -2,24 +2,29 @@
     position: sticky;
     top: 0;
     z-index: 2;
-    .flex-row;
-    justify-content: space-around;
-    align-items: center;
+    .flex-column;
     // .test-border;
     width: 100%;
-    background-color: @white;
+    background-color: @primary;
     h1 {
-    color: @primary-color;
+    color: @secondary;
+    text-align: center;
     }
     nav {
         .flex-row;
+        // .test-border;
+        padding: 1rem 1.5rem;
         justify-content: space-evenly;
         align-items: center;
         a {
             margin: 0 0.5rem;
+            color: @secondary;
         }
-        a:hover {
-            transform: scale(1.15);
-        }
+        
+    }
+    @media (@desktop){
+        .flex-row;
+        justify-content: space-around;
+        align-items: center;
     }
 }

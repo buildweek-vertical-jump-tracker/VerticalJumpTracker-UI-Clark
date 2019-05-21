@@ -1,11 +1,16 @@
 main {
     position: relative;
+    padding: 1.5rem;
     top: 3rem;
     width: 100%;
     .flex-column;
     align-items: center;
     text-align: center;
     z-index: 1;
+    h2 {
+        position: relative;
+        bottom: 1.25rem;
+    }
     .buttons {
         .flex-row;
         // .test-border;
@@ -17,6 +22,14 @@ main {
         }
         div {
             font-size: 2rem;
+            border: 1px solid @black;
+            padding: 0.25rem 1rem;
+            color: @primary;
+            background-color: @white;
+        }
+        div:hover {
+            background-color: @primary;
+            color: @white;
         }
     }
 }
