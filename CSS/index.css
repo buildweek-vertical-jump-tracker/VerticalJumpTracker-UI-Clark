@@ -90,7 +90,7 @@ a:hover {
   margin: 0 0.5rem;
   color: #CDCDCD;
 }
-@media (.desktop) {
+@media (min-width: 800px) {
   .top {
     display: flex;
     flex-direction: row;
@@ -113,6 +113,11 @@ main h2 {
   position: relative;
   bottom: 1.25rem;
 }
+main .quote {
+  position: relative;
+  bottom: 1rem;
+  width: 70%;
+}
 main .buttons {
   display: flex;
   flex-direction: row;
@@ -123,16 +128,19 @@ main .buttons {
 main .buttons .btn {
   margin: 0 1.5rem;
 }
-main .buttons div {
+main .buttons #log-in {
   font-size: 2rem;
   border: 1px solid #000;
   padding: 0.25rem 1rem;
   color: #000080;
   background-color: #FFF;
 }
-main .buttons div:hover {
+main .buttons #log-in:hover {
   background-color: #000080;
   color: #FFF;
+}
+main .buttons button:hover {
+  cursor: pointer;
 }
 footer {
   margin-top: 3rem;

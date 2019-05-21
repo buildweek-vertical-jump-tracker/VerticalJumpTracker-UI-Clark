@@ -11,6 +11,11 @@ main {
         position: relative;
         bottom: 1.25rem;
     }
+    .quote {
+        position: relative;
+        bottom: 1rem;
+        width: 70%;
+    }
     .buttons {
         .flex-row;
         // .test-border;
@@ -20,16 +25,20 @@ main {
         .btn {
             margin: 0 1.5rem;
         }
-        div {
+        #log-in {
             font-size: 2rem;
             border: 1px solid @black;
             padding: 0.25rem 1rem;
             color: @primary;
             background-color: @white;
+            &:hover {
+                background-color: @primary;
+                color: @white;
+            }
         }
-        div:hover {
-            background-color: @primary;
-            color: @white;
+        
+        button:hover {
+            cursor: pointer;
         }
     }
 }
