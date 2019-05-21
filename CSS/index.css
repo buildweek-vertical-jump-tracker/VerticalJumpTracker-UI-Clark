@@ -92,13 +92,13 @@ a:hover {
 .top nav a:hover {
   color: #FFF;
 }
-@media (min-width: 600px) and (max-width: 999px) {
+@media (min-width: 600px) and (max-width: 800px), (min-width: 801px) {
   .top nav a {
     margin: 0 1.5rem;
     font-size: 1.25rem;
   }
 }
-@media (min-width: 1000px), (min-width: 600px) and (max-width: 999px) {
+@media (min-width: 801px), (min-width: 600px) and (max-width: 800px) {
   .top {
     display: flex;
     flex-direction: row;
@@ -126,30 +126,61 @@ main .quote {
 }
 main .buttons {
   position: relative;
-  bottom: 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
   margin: 1.5rem;
 }
 main .buttons .btn {
-  margin: 0 1.5rem;
-}
-main .buttons #log-in {
+  margin: 1rem;
   font-size: 2rem;
   border: 1px solid #000;
   padding: 0.25rem 1rem;
-  color: #000080;
-  background-color: #FFF;
-}
-main .buttons #log-in:hover {
   background-color: #000080;
   color: #FFF;
 }
-main .buttons button:hover {
+main .buttons .btn:hover {
+  color: #000080;
+  background-color: #FFF;
   cursor: pointer;
+}
+@media (min-width: 801px), (min-width: 600px) and (max-width: 800px) {
+  main .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+}
+main .sections {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 801px) {
+  main .sections {
+    display: flex;
+    flex-direction: row;
+  }
+}
+main .sections section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 801px) {
+  main .sections section h3 {
+    order: 2;
+  }
+}
+@media (min-width: 801px) {
+  main .sections section img {
+    order: 1;
+  }
+}
+@media (min-width: 801px) {
+  main .sections section p {
+    order: 3;
+  }
 }
 main .email-form {
   display: flex;
@@ -162,7 +193,7 @@ main .email-form .email-name {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 600px) and (max-width: 999px), (min-width: 1000px) {
+@media (min-width: 600px) and (max-width: 800px), (min-width: 801px) {
   main .email-form .email-name {
     display: flex;
     flex-direction: row;
@@ -177,4 +208,12 @@ footer {
   color: #CDCDCD;
   width: 100%;
   text-align: center;
+}
+footer a {
+  position: relative;
+  top: 0.5rem;
+  color: #CDCDCD;
+}
+footer a:hover {
+  color: #FFF;
 }

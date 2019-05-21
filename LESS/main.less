@@ -7,6 +7,10 @@ main {
     align-items: center;
     text-align: center;
     z-index: 1;
+    // #first-img {
+    //     width: 427px;
+    //     height: 640px;
+    // }
     h2 {
         position: relative;
         bottom: 1.25rem;
@@ -18,31 +22,58 @@ main {
     }
     .buttons {
         position: relative;
-        bottom: 2rem;
-        .flex-row;
+        // bottom: 2rem;
+        .flex-column;
         // .test-border;
         justify-content: space-between;
         align-items: center;
         padding: 0.5rem;
         margin: 1.5rem;
         .btn {
-            margin: 0 1.5rem;
-        }
-        #log-in {
+            margin: 1rem;
             font-size: 2rem;
             border: 1px solid @black;
             padding: 0.25rem 1rem;
-            color: @primary;
-            background-color: @white;
+            background-color: @primary;
+            color: @white;
             &:hover {
-                background-color: @primary;
-                color: @white;
+                color: @primary;
+                background-color: @white;
+                cursor: pointer;
             }
         }
-        
-        button:hover {
-            cursor: pointer;
+        @media @desktop, @tablet {
+            .flex-row;
         }
+    }
+    .sections {
+        .flex-column;
+        // .test-border;
+        @media @desktop {
+            .flex-row
+        }
+        section {
+            // .test-border;
+            .flex-column;
+            align-items: center;
+            h3 {
+                @media @desktop {
+                    order: 2;
+                }
+            }
+            img {
+                // .test-border;
+                @media @desktop {
+                    order: 1;
+                }   
+            }
+            p {
+                @media @desktop {
+                    order: 3;
+                }
+            }
+        }
+            
     }
     .email-form {
         .flex-column;
