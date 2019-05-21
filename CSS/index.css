@@ -29,12 +29,10 @@ html {
 img {
   max-width: 95%;
   height: auto;
+  border: 1px dashed red;
 }
 a {
   text-decoration: none;
-}
-a:hover {
-  transform: scale(1.15);
 }
 * {
   box-sizing: border-box;
@@ -56,12 +54,10 @@ html {
 img {
   max-width: 95%;
   height: auto;
+  border: 1px dashed red;
 }
 a {
   text-decoration: none;
-}
-a:hover {
-  transform: scale(1.15);
 }
 .top {
   position: sticky;
@@ -71,11 +67,13 @@ a:hover {
   flex-direction: column;
   width: 100%;
   background-color: #000080;
+  border-bottom: 1px solid #FFF;
 }
 .top h1 {
   color: #CDCDCD;
   text-align: center;
   font-size: 2rem;
+  font-family: 'Cabin', sans-serif;
 }
 .top nav {
   display: flex;
@@ -88,9 +86,11 @@ a:hover {
   margin: 0 0.5rem;
   color: #CDCDCD;
   font-size: 1.25rem;
+  font-family: 'Catamaran', sans-serif;
 }
 .top nav a:hover {
   color: #FFF;
+  transform: scale(1.15);
 }
 @media (min-width: 600px) and (max-width: 800px), (min-width: 801px) {
   .top nav a {
@@ -115,14 +115,30 @@ main {
   text-align: center;
   z-index: 1;
 }
+main #our-app {
+  height: 5px;
+  width: 5px;
+  background-color: red;
+  position: absolute;
+  top: 91px;
+}
 main h2 {
   position: relative;
   bottom: 1.25rem;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2.25rem;
+}
+main h3 {
+  font-family: 'Cabin', sans-serif;
+}
+main p {
+  font-family: 'Lora', serif;
 }
 main .quote {
   position: relative;
   bottom: 1rem;
   width: 70%;
+  font-family: 'Cabin', sans-serif;
 }
 main .buttons {
   position: relative;
@@ -134,10 +150,13 @@ main .buttons {
   margin: 1.5rem;
 }
 main .buttons .btn {
+  width: 10rem;
   margin: 1rem;
+  padding: 0.25rem 1rem;
   font-size: 2rem;
   border: 1px solid #000;
-  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  box-shadow: ;
   background-color: #000080;
   color: #FFF;
 }
@@ -145,6 +164,7 @@ main .buttons .btn:hover {
   color: #000080;
   background-color: #FFF;
   cursor: pointer;
+  transform: scale(1.15);
 }
 @media (min-width: 801px), (min-width: 600px) and (max-width: 800px) {
   main .buttons {
@@ -168,6 +188,11 @@ main .sections section {
   align-items: center;
 }
 @media (min-width: 801px) {
+  main .sections section {
+    margin: 0 1rem;
+  }
+}
+@media (min-width: 801px) {
   main .sections section h3 {
     order: 2;
   }
@@ -176,6 +201,9 @@ main .sections section {
   main .sections section img {
     order: 1;
   }
+}
+main .sections section p {
+  text-align: justify;
 }
 @media (min-width: 801px) {
   main .sections section p {
@@ -204,16 +232,44 @@ main .contact-info {
 }
 footer {
   margin-top: 3rem;
+  padding-top: 0.5rem;
   background-color: #000080;
   color: #CDCDCD;
   width: 100%;
   text-align: center;
+  border-top: 1px solid #FFF;
 }
 footer a {
   position: relative;
   top: 0.5rem;
   color: #CDCDCD;
+  font-family: 'Catamaran', sans-serif;
 }
 footer a:hover {
   color: #FFF;
+  transform: scale(1.15);
+}
+footer p {
+  font-family: 'Cabin', sans-serif;
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Cabin'), local('Cabin-Regular'), url(https://fonts.gstatic.com/s/cabin/v13/u-4x0qWljRw-Pd8w__g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Catamaran Regular'), local('Catamaran-Regular'), url(https://fonts.gstatic.com/s/catamaran/v5/o-0IIpQoyXQa2RxT7-5r5TRF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v13/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
 }

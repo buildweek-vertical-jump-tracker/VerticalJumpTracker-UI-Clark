@@ -11,14 +11,32 @@ main {
     //     width: 427px;
     //     height: 640px;
     // }
+    #our-app {
+        // display: none;
+        height: 5px;
+        width: 5px;
+        background-color: red;
+        position: absolute;
+        top: 91px;
+    }
     h2 {
         position: relative;
         bottom: 1.25rem;
+        font-family: @font2;
+        font-size: 2.25rem;
+        // .test-border;
+    }
+    h3 {
+        font-family: @font1;
+    }
+    p {
+        font-family: @font3;
     }
     .quote {
         position: relative;
         bottom: 1rem;
         width: 70%;
+        font-family: @font1;
     }
     .buttons {
         position: relative;
@@ -30,16 +48,21 @@ main {
         padding: 0.5rem;
         margin: 1.5rem;
         .btn {
+            width: 10rem;            
             margin: 1rem;
-            font-size: 2rem;
-            border: 1px solid @black;
             padding: 0.25rem 1rem;
+            font-size: 2rem;
+            border: 1px solid @dark;
+            border-radius: 5px;
+            box-shadow: ;
             background-color: @primary;
-            color: @white;
+            color: @light;
+            // .test-border;
             &:hover {
                 color: @primary;
-                background-color: @white;
+                background-color: @light;
                 cursor: pointer;
+                transform: scale(1.15);
             }
         }
         @media @desktop, @tablet {
@@ -50,12 +73,16 @@ main {
         .flex-column;
         // .test-border;
         @media @desktop {
-            .flex-row
+            .flex-row;
+            // padding: 1rem;
         }
         section {
             // .test-border;
             .flex-column;
             align-items: center;
+            @media @desktop {
+                margin: 0 1rem;
+            }
             h3 {
                 @media @desktop {
                     order: 2;
@@ -68,6 +95,7 @@ main {
                 }   
             }
             p {
+                text-align: justify;
                 @media @desktop {
                     order: 3;
                 }

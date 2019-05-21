@@ -1,16 +1,23 @@
 footer {
     margin-top: 3rem;
-    // padding: 1rem;
+    padding-top: 0.5rem;
     background-color: @primary;
     color: @secondary;
     width: 100%;
     text-align: center;
+    border-top: 1px solid @light;
     a {
         position: relative;
         top: 0.5rem;
         color: @secondary;
+        font-family: @font2;
+        // .test-border;
         &:hover {
-            color: @white;
+            color: @light;
+            transform: scale(1.15);
         }
+    }
+    p {
+        font-family: @font1;
     }
 }

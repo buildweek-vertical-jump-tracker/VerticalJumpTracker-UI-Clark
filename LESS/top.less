@@ -6,10 +6,12 @@
     // .test-border;
     width: 100%;
     background-color: @primary;
+    border-bottom: 1px solid @light;
     h1 {
-    color: @secondary;
-    text-align: center;
-    font-size: 2rem;
+        color: @secondary;
+        text-align: center;
+        font-size: 2rem;
+        font-family: @font1;
     }
     nav {
         .flex-row;
@@ -21,8 +23,10 @@
             margin: 0 0.5rem;
             color: @secondary;
             font-size: 1.25rem;
+            font-family: @font2;
             &:hover {
-                color: @white;
+                color: @light;
+                transform: scale(1.15);
             }
             @media @tablet, @desktop{
                 margin: 0 1.5rem;
