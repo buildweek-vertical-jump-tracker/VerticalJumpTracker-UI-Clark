@@ -47,15 +47,21 @@ main {
     .email-form {
         .flex-column;
         // .test-border;
-        input {
+        // max-width: 66%;
+        .margin {
             margin: 1rem;
         }
         .email-name {
-            .flex-row;
-            // max-width: 33%;
+            .flex-column;
+            // .test-border;
+            // justify-content: center;
+            @media @tablet, @desktop {
+                .flex-row;
+            }
+            
         }
     }
     .contact-info {
-        font-size: 1.2rem;
+        font-size: 1.33rem;
     }
 }

@@ -155,15 +155,21 @@ main .email-form {
   display: flex;
   flex-direction: column;
 }
-main .email-form input {
+main .email-form .margin {
   margin: 1rem;
 }
 main .email-form .email-name {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+@media (min-width: 600px) and (max-width: 999px), (min-width: 1000px) {
+  main .email-form .email-name {
+    display: flex;
+    flex-direction: row;
+  }
 }
 main .contact-info {
-  font-size: 1.2rem;
+  font-size: 1.33rem;
 }
 footer {
   margin-top: 3rem;
