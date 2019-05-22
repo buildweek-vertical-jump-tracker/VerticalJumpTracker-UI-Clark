@@ -29,7 +29,6 @@ html {
 img {
   max-width: 95%;
   height: auto;
-  border: 1px dashed red;
 }
 a {
   text-decoration: none;
@@ -54,7 +53,6 @@ html {
 img {
   max-width: 95%;
   height: auto;
-  border: 1px dashed red;
 }
 a {
   text-decoration: none;
@@ -126,12 +124,6 @@ main h3 {
 }
 main p {
   font-family: 'Lora', serif;
-}
-main .quote {
-  position: relative;
-  bottom: 1rem;
-  width: 70%;
-  font-family: 'Cabin', sans-serif;
 }
 main .buttons {
   position: relative;
@@ -216,6 +208,9 @@ main .sections section {
     order: 2;
   }
 }
+main .sections section img {
+  width: 75%;
+}
 @media (min-width: 801px) {
   main .sections section img {
     order: 1;
@@ -256,6 +251,11 @@ main .email-form #submit {
 main .contact-info {
   font-size: 1.33rem;
 }
+main #about-text p {
+  margin: auto;
+  text-align: justify;
+  width: 85%;
+}
 footer {
   margin-top: 3rem;
   padding-top: 0.5rem;
@@ -277,6 +277,19 @@ footer a:hover {
 }
 footer p {
   font-family: 'Cabin', sans-serif;
+}
+.quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 1rem;
+}
+.quotes .quote {
+  font-family: 'Cabin', sans-serif;
+}
+.quotes .hidden-quote {
+  display: none;
 }
 @font-face {
   font-family: 'Cabin';

@@ -25,12 +25,7 @@ main {
     p {
         font-family: @font3;
     }
-    .quote {
-        position: relative;
-        bottom: 1rem;
-        width: 70%;
-        font-family: @font1;
-    }
+    
     .buttons {
         position: relative;
         // bottom: 2rem;
@@ -110,6 +105,7 @@ main {
             }
             img {
                 // .test-border;
+                width: 75%;
                 @media @desktop {
                     order: 1;
                 }   
@@ -155,5 +151,12 @@ main {
     }
     .contact-info {
         font-size: 1.33rem;
+    }
+    #about-text {
+        p {
+            margin: auto;
+            text-align: justify;
+            width: 85%;
+        }
     }
 }
