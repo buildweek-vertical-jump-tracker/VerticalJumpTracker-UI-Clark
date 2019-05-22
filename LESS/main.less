@@ -11,14 +11,7 @@ main {
     //     width: 427px;
     //     height: 640px;
     // }
-    #our-app {
-        // display: none;
-        height: 5px;
-        width: 5px;
-        background-color: red;
-        position: absolute;
-        top: 91px;
-    }
+    
     h2 {
         position: relative;
         bottom: 1.25rem;
@@ -47,6 +40,19 @@ main {
         align-items: center;
         padding: 0.5rem;
         margin: 1.5rem;
+        #btn-jump {
+            visibility: hidden;
+            height: 5px;
+            width: 5px;
+            background-color: yellow;
+            // position: absolute;
+            // top: 15rem;
+            position: relative;
+            bottom: 10rem;
+            @media @tablet, @desktop {
+                bottom: 8rem;
+            }
+        }
         .btn {
             width: 10rem;            
             margin: 1rem;
@@ -76,6 +82,20 @@ main {
             .flex-row;
             // padding: 1rem;
         }
+        #app-jump {
+            // display: none;
+            visibility: hidden;
+            height: 5px;
+            width: 5px;
+            background-color: red;
+            // position: absolute;
+            // top: 15rem;
+            position: relative;
+            bottom: 10rem;
+            @media @tablet, @desktop {
+                bottom: 5rem;
+            }
+        }
         section {
             // .test-border;
             .flex-column;
@@ -100,6 +120,12 @@ main {
                     order: 3;
                 }
             }
+            // #about-text {
+            //     p {
+            //         .test-border;
+            //         width: 66%;
+            //     }
+            // }
         }
             
     }
@@ -118,6 +144,13 @@ main {
                 .flex-row;
             }
             
+        }
+        textarea {
+            resize: none;
+        }
+        #submit {
+            width: 33%;
+            margin: auto;
         }
     }
     .contact-info {

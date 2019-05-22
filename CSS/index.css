@@ -115,13 +115,6 @@ main {
   text-align: center;
   z-index: 1;
 }
-main #our-app {
-  height: 5px;
-  width: 5px;
-  background-color: red;
-  position: absolute;
-  top: 91px;
-}
 main h2 {
   position: relative;
   bottom: 1.25rem;
@@ -148,6 +141,19 @@ main .buttons {
   align-items: center;
   padding: 0.5rem;
   margin: 1.5rem;
+}
+main .buttons #btn-jump {
+  visibility: hidden;
+  height: 5px;
+  width: 5px;
+  background-color: yellow;
+  position: relative;
+  bottom: 10rem;
+}
+@media (min-width: 600px) and (max-width: 800px), (min-width: 801px) {
+  main .buttons #btn-jump {
+    bottom: 8rem;
+  }
 }
 main .buttons .btn {
   width: 10rem;
@@ -180,6 +186,19 @@ main .sections {
   main .sections {
     display: flex;
     flex-direction: row;
+  }
+}
+main .sections #app-jump {
+  visibility: hidden;
+  height: 5px;
+  width: 5px;
+  background-color: red;
+  position: relative;
+  bottom: 10rem;
+}
+@media (min-width: 600px) and (max-width: 800px), (min-width: 801px) {
+  main .sections #app-jump {
+    bottom: 5rem;
   }
 }
 main .sections section {
@@ -226,6 +245,13 @@ main .email-form .email-name {
     display: flex;
     flex-direction: row;
   }
+}
+main .email-form textarea {
+  resize: none;
+}
+main .email-form #submit {
+  width: 33%;
+  margin: auto;
 }
 main .contact-info {
   font-size: 1.33rem;
