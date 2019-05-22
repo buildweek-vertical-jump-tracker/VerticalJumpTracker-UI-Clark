@@ -16,14 +16,22 @@ main {
         position: relative;
         bottom: 1.25rem;
         font-family: @font2;
-        font-size: 2.25rem;
+        font-size: 3rem;
         // .test-border;
+        @media @desktop {
+            font-size: 3.5rem;
+        }
     }
     h3 {
         font-family: @font1;
+        font-size: 2rem;
+        @media @desktop {
+            font-size: 2.5rem;
+        }
     }
     p {
         font-family: @font3;
+        font-size: 1.5rem;
     }
     
     .buttons {
@@ -43,9 +51,12 @@ main {
             // position: absolute;
             // top: 15rem;
             position: relative;
-            bottom: 10rem;
-            @media @tablet, @desktop {
-                bottom: 8rem;
+            bottom: 14rem;
+            @media @tablet {
+                bottom: 10rem;
+            }
+            @media @desktop {
+                bottom: 12rem;
             }
         }
         .btn {
@@ -55,7 +66,7 @@ main {
             font-size: 2rem;
             border: 1px solid @dark;
             border-radius: 5px;
-            box-shadow: ;
+            // box-shadow: ;
             background-color: @primary;
             color: @light;
             // .test-border;
@@ -86,9 +97,12 @@ main {
             // position: absolute;
             // top: 15rem;
             position: relative;
-            bottom: 10rem;
-            @media @tablet, @desktop {
-                bottom: 5rem;
+            bottom: 14rem;
+            @media @tablet {
+                bottom: 8rem;
+            }
+            @media @desktop {
+                bottom: 10rem;
             }
         }
         section {

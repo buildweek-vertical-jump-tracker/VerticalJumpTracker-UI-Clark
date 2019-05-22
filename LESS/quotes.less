@@ -1,13 +1,19 @@
 .quotes {
-    // .test-border;
+    .test-border;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 1rem;
+    bottom: 2rem;
     overflow: hidden;
     width: 70%;
-    height: 4rem;
+    height: 6rem;
+    p {
+        font-size: 1.5rem;
+        @media @desktop {
+            font-size: 1.75rem;
+        }
+    }
     .quote {
         font-family: @font1;
         display: none;
