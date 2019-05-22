@@ -5,15 +5,32 @@
     align-items: center;
     position: relative;
     bottom: 1rem;
+    overflow: hidden;
+    width: 70%;
+    height: 4rem;
     .quote {
-        // width: 70%;
         font-family: @font1;
+        display: none;
         // .test-border;
     }
     // .active-quote {
 
     // }
-    .hidden-quote {
-        display: none;
+    .quote-selected {
+        display: block;
+        animation: showQuote .5s;
     }
+    .quote-remove {
+        animation:  quoteReverse .5s;
+
+    }
+}
+
+@keyframes showQuote {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes quoteReverse {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }

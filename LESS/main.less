@@ -152,6 +152,30 @@ main {
     .contact-info {
         font-size: 1.33rem;
     }
+    .person-container {
+        .flex-column;
+        .test-border;
+        h2, h3 {
+            margin: 1rem;
+        }
+        .person {
+            .flex-column;
+            align-items: center;
+            .test-border-blue;
+            img {
+                width: 100%;
+                height: auto;
+                
+            }
+            .test {
+                .test-border-green;
+            }
+            
+        }
+        @media @desktop {
+            .flex-row;
+        }
+    }
     #about-text {
         p {
             margin: auto;

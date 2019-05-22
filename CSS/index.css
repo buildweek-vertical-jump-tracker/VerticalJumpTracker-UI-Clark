@@ -9,6 +9,12 @@
 .test-border {
   border: 1px dashed red;
 }
+.test-border-blue {
+  border: 1px dashed blue;
+}
+.test-border-green {
+  border: 1px dashed green;
+}
 * {
   box-sizing: border-box;
 }
@@ -90,13 +96,19 @@ a {
   color: #FFF;
   transform: scale(1.15);
 }
-@media (min-width: 600px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 600px) and (max-width: 829px) {
   .top nav a {
     margin: 0 1.5rem;
     font-size: 1.25rem;
   }
 }
-@media (min-width: 801px), (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 830px) {
+  .top nav a {
+    margin: 0 3rem;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 830px), (min-width: 600px) and (max-width: 829px) {
   .top {
     display: flex;
     flex-direction: row;
@@ -142,7 +154,7 @@ main .buttons #btn-jump {
   position: relative;
   bottom: 10rem;
 }
-@media (min-width: 600px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 600px) and (max-width: 829px), (min-width: 830px) {
   main .buttons #btn-jump {
     bottom: 8rem;
   }
@@ -164,7 +176,7 @@ main .buttons .btn:hover {
   cursor: pointer;
   transform: scale(1.15);
 }
-@media (min-width: 801px), (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 830px), (min-width: 600px) and (max-width: 829px) {
   main .buttons {
     display: flex;
     flex-direction: row;
@@ -174,7 +186,7 @@ main .sections {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 801px) {
+@media (min-width: 830px) {
   main .sections {
     display: flex;
     flex-direction: row;
@@ -188,7 +200,7 @@ main .sections #app-jump {
   position: relative;
   bottom: 10rem;
 }
-@media (min-width: 600px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 600px) and (max-width: 829px), (min-width: 830px) {
   main .sections #app-jump {
     bottom: 5rem;
   }
@@ -198,12 +210,12 @@ main .sections section {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 801px) {
+@media (min-width: 830px) {
   main .sections section {
     margin: 0 1rem;
   }
 }
-@media (min-width: 801px) {
+@media (min-width: 830px) {
   main .sections section h3 {
     order: 2;
   }
@@ -211,7 +223,7 @@ main .sections section {
 main .sections section img {
   width: 75%;
 }
-@media (min-width: 801px) {
+@media (min-width: 830px) {
   main .sections section img {
     order: 1;
   }
@@ -219,7 +231,7 @@ main .sections section img {
 main .sections section p {
   text-align: justify;
 }
-@media (min-width: 801px) {
+@media (min-width: 830px) {
   main .sections section p {
     order: 3;
   }
@@ -235,7 +247,7 @@ main .email-form .email-name {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 600px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 600px) and (max-width: 829px), (min-width: 830px) {
   main .email-form .email-name {
     display: flex;
     flex-direction: row;
@@ -250,6 +262,34 @@ main .email-form #submit {
 }
 main .contact-info {
   font-size: 1.33rem;
+}
+main .person-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed red;
+}
+main .person-container h2,
+main .person-container h3 {
+  margin: 1rem;
+}
+main .person-container .person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dashed blue;
+}
+main .person-container .person img {
+  width: 100%;
+  height: auto;
+}
+main .person-container .person .test {
+  border: 1px dashed green;
+}
+@media (min-width: 830px) {
+  main .person-container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 main #about-text p {
   margin: auto;
@@ -284,12 +324,36 @@ footer p {
   align-items: center;
   position: relative;
   bottom: 1rem;
+  overflow: hidden;
+  width: 70%;
+  height: 4rem;
 }
 .quotes .quote {
   font-family: 'Cabin', sans-serif;
-}
-.quotes .hidden-quote {
   display: none;
+}
+.quotes .quote-selected {
+  display: block;
+  animation: showQuote 0.5s;
+}
+.quotes .quote-remove {
+  animation: quoteReverse 0.5s;
+}
+@keyframes showQuote {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes quoteReverse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 @font-face {
   font-family: 'Cabin';
