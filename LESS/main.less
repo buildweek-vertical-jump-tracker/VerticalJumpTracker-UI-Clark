@@ -168,26 +168,46 @@ main {
     }
     .person-container {
         .flex-column;
-        .test-border;
-        h2, h3 {
+        // .test-border;
+        justify-content: space-between;
+        
+        h2 {
             margin: 1rem;
+            // .test-border;
+            @media @desktop {
+                font-size: 2rem;
+            }
+        } 
+        h3 {
+            margin: 1rem;
+            position: relative;
+            bottom: 1.5rem;
+            // .test-border-green;
+            @media @desktop {
+                font-size: 1.5rem;
+                position: relative;
+                bottom: 0;
+            }
         }
         .person {
             .flex-column;
             align-items: center;
-            .test-border-blue;
+            // .test-border-blue;
             img {
                 width: 100%;
                 height: auto;
-                
+                margin: 1rem;
+                // .test-border-green;  
             }
-            .test {
-                .test-border-green;
+            @media @desktop {
+                width: 20%;
+                margin: 1rem;
             }
             
         }
         @media @desktop {
-            .flex-row;
+            .flex-row;            
+            margin: 0 1.5rem;
         }
     }
     #about-text {
