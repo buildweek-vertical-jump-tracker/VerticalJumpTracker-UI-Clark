@@ -35,7 +35,7 @@
   font-size: 2rem;
   border: 1px solid #000;
   border-radius: 5px;
-  background: linear-gradient(0deg, #000080, #1c1cc7);
+  background: linear-gradient(0deg, hsl(240, 100%, 25%), #1c1cc7);
   color: #FFF;
   box-shadow: 0.3rem 0.5rem 0.5rem #000;
 }
@@ -43,8 +43,8 @@
   outline: none;
 }
 .btn-styling:hover {
-  color: #000080;
-  background: linear-gradient(180deg, #FFF, #CDCDCD);
+  color: hsl(240, 100%, 25%);
+  background: linear-gradient(180deg, #FFF, #cdcdcd);
   cursor: pointer;
   transform: scale(1.15);
 }
@@ -59,7 +59,7 @@ html {
   font-size: 62.5%;
 }
 .container {
-  background: linear-gradient(160deg, #CDCDCD, #636363);
+  background: linear-gradient(160deg, #cdcdcd, #636363);
   max-width: 100%;
   width: 100%;
   height: 100%;
@@ -84,7 +84,7 @@ html {
   font-size: 62.5%;
 }
 .container {
-  background: linear-gradient(160deg, #CDCDCD, #636363);
+  background: linear-gradient(160deg, #cdcdcd, #636363);
   max-width: 100%;
   width: 100%;
   height: 100%;
@@ -109,11 +109,11 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: linear-gradient(180deg, #000080, #1c1cc7);
+  background: linear-gradient(180deg, hsl(240, 100%, 25%), #1c1cc7);
   border-bottom: 1px solid #FFF;
 }
 .top h1 {
-  color: #CDCDCD;
+  color: #cdcdcd;
   text-align: center;
   font-size: 3rem;
   font-family: 'Cabin', sans-serif;
@@ -137,7 +137,7 @@ a {
 }
 .top nav a {
   margin: 0 0.5rem;
-  color: #CDCDCD;
+  color: #cdcdcd;
   font-size: 2rem;
   font-family: 'Catamaran', sans-serif;
   white-space: nowrap;
@@ -227,7 +227,7 @@ main .buttons .btn {
   font-size: 2rem;
   border: 1px solid #000;
   border-radius: 5px;
-  background: linear-gradient(0deg, #000080, #1c1cc7);
+  background: linear-gradient(0deg, hsl(240, 100%, 25%), #1c1cc7);
   color: #FFF;
   box-shadow: 0.3rem 0.5rem 0.5rem #000;
   margin: 1rem;
@@ -236,8 +236,8 @@ main .buttons .btn:focus {
   outline: none;
 }
 main .buttons .btn:hover {
-  color: #000080;
-  background: linear-gradient(180deg, #FFF, #CDCDCD);
+  color: hsl(240, 100%, 25%);
+  background: linear-gradient(180deg, #FFF, #cdcdcd);
   cursor: pointer;
   transform: scale(1.15);
 }
@@ -351,7 +351,7 @@ main .email-form #submit {
   font-size: 2rem;
   border: 1px solid #000;
   border-radius: 5px;
-  background: linear-gradient(0deg, #000080, #1c1cc7);
+  background: linear-gradient(0deg, hsl(240, 100%, 25%), #1c1cc7);
   color: #FFF;
   box-shadow: 0.3rem 0.5rem 0.5rem #000;
 }
@@ -359,8 +359,8 @@ main .email-form #submit:focus {
   outline: none;
 }
 main .email-form #submit:hover {
-  color: #000080;
-  background: linear-gradient(180deg, #FFF, #CDCDCD);
+  color: hsl(240, 100%, 25%);
+  background: linear-gradient(180deg, #FFF, #cdcdcd);
   cursor: pointer;
   transform: scale(1.15);
 }
@@ -442,8 +442,8 @@ main #about-text p {
 footer {
   margin-top: 3rem;
   padding-top: 0.5rem;
-  background: linear-gradient(0deg, #000080, #1c1cc7);
-  color: #CDCDCD;
+  background: linear-gradient(0deg, hsl(240, 100%, 25%), #1c1cc7);
+  color: #cdcdcd;
   width: 100%;
   text-align: center;
   border-top: 1px solid #FFF;
@@ -451,7 +451,7 @@ footer {
 footer a {
   position: relative;
   top: 0.5rem;
-  color: #CDCDCD;
+  color: #cdcdcd;
   font-family: 'Catamaran', sans-serif;
   font-size: 1.6rem;
 }
