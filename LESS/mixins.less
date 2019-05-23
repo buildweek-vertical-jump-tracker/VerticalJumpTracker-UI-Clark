@@ -41,10 +41,20 @@
     background: linear-gradient(0deg, @primary, @primary-variation);
     color: @light;
     // .test-border;
+    box-shadow: 0.3rem 0.5rem 0.5rem @dark;
     &:hover {
         color: @primary;
         background: linear-gradient(180deg, @light, @secondary);
         cursor: pointer;
         transform: scale(1.15);
     }
+    &:active {
+        transform: translateY(0.3rem);
+        box-shadow: 0.15rem 0.3rem 0.3rem @dark;
+        background: linear-gradient(180deg, @secondary, @secondary-variation);
+
+    }
 }
+// .box-shadow1 {
+//     box-shadow: ;
+// }
