@@ -65,10 +65,10 @@ main {
         // .test-border;
         @media @desktop {
             .flex-row;
+            
             // padding: 1rem;
         }
         #app-jump {
-            // display: none;
             visibility: hidden;
             height: 5px;
             width: 5px;
@@ -87,9 +87,11 @@ main {
         section {
             // .test-border;
             .flex-column;
+            min-width: 40%;
             align-items: center;
+            justify-content: space-evenly;
             @media @desktop {
-                margin: 0 1rem;
+                margin: 0 2rem;
             }
             h3 {
                 font-family: @font1;
@@ -102,25 +104,23 @@ main {
             img {
                 // .test-border;
                 max-width: 75%;
+                min-width: 50%;
                 border-radius: 5px;
+                margin: 2rem 0;
                 @media @desktop {
                     order: 1;
                 }   
             }
-            p {
+            .text-section {
+                .margin-padding-reset;
                 text-align: justify;
+                width: 75%;
                 @media @desktop {
-                    order: 3;
+                    order: 3;  
+                
                 }
             }
-            // #about-text {
-            //     p {
-            //         .test-border;
-            //         width: 66%;
-            //     }
-            // }
         }
-            
     }
     .email-form {
         .flex-column;
@@ -135,19 +135,25 @@ main {
             // justify-content: center;
             @media @tablet, @desktop {
                 .flex-row;
-            }
-            
+                
+            }   
         }
         textarea {
             resize: none;
         }
         #submit {
-            .btn-styling;
-            
+            .btn-styling;  
         }
+        transform: scale(1.25);
+        
     }
     .contact-info {
-        font-size: 1.33rem;
+        p {
+            position: relative;
+            top: 1.5rem;
+            font-size: 2rem;
+            font-weight: bold;
+        }
     }
     .person-container {
         .flex-column;
@@ -165,7 +171,6 @@ main {
                 width: 100%;
                 height: auto;
                 border-radius: 5px;
-                box-shadow: 0.35rem 0.5rem 0.5rem @dark;
                 .margin-padding-reset;
                 // .test-border-green;  
             }
@@ -213,8 +218,9 @@ main {
         }
         p {
             margin: auto;
-            text-align: justify;
-            width: 85%;
+            text-align: center;
+            width: 75%;
+            // .test-border;
         }
     }
 }

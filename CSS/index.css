@@ -29,7 +29,7 @@
   padding: 0;
 }
 .btn-styling {
-  width: 10rem;
+  width: 14rem;
   margin: 1rem auto;
   padding: 0.25rem 1rem;
   font-size: 2rem;
@@ -38,6 +38,9 @@
   background: linear-gradient(0deg, #000080, #1c1cc7);
   color: #FFF;
   box-shadow: 0.3rem 0.5rem 0.5rem #000;
+}
+.btn-styling:focus {
+  outline: none;
 }
 .btn-styling:hover {
   color: #000080;
@@ -48,7 +51,6 @@
 .btn-styling:active {
   transform: translateY(0.3rem);
   box-shadow: 0.15rem 0.3rem 0.3rem #000;
-  background: linear-gradient(180deg, #CDCDCD, #636363);
 }
 * {
   box-sizing: border-box;
@@ -69,6 +71,7 @@ html {
 }
 img {
   max-width: 100%;
+  box-shadow: 0.35rem 0.5rem 0.5rem #000;
   height: auto;
 }
 a {
@@ -93,6 +96,7 @@ html {
 }
 img {
   max-width: 100%;
+  box-shadow: 0.35rem 0.5rem 0.5rem #000;
   height: auto;
 }
 a {
@@ -217,7 +221,7 @@ main .buttons #btn-jump {
   }
 }
 main .buttons .btn {
-  width: 10rem;
+  width: 14rem;
   margin: 1rem auto;
   padding: 0.25rem 1rem;
   font-size: 2rem;
@@ -228,6 +232,9 @@ main .buttons .btn {
   box-shadow: 0.3rem 0.5rem 0.5rem #000;
   margin: 1rem;
 }
+main .buttons .btn:focus {
+  outline: none;
+}
 main .buttons .btn:hover {
   color: #000080;
   background: linear-gradient(180deg, #FFF, #CDCDCD);
@@ -237,7 +244,6 @@ main .buttons .btn:hover {
 main .buttons .btn:active {
   transform: translateY(0.3rem);
   box-shadow: 0.15rem 0.3rem 0.3rem #000;
-  background: linear-gradient(180deg, #CDCDCD, #636363);
 }
 @media (min-width: 830px), (min-width: 600px) and (max-width: 930px) {
   main .buttons {
@@ -276,11 +282,13 @@ main .sections #app-jump {
 main .sections section {
   display: flex;
   flex-direction: column;
+  min-width: 40%;
   align-items: center;
+  justify-content: space-evenly;
 }
 @media (min-width: 830px) {
   main .sections section {
-    margin: 0 1rem;
+    margin: 0 2rem;
   }
 }
 main .sections section h3 {
@@ -295,24 +303,30 @@ main .sections section h3 {
 }
 main .sections section img {
   max-width: 75%;
+  min-width: 50%;
   border-radius: 5px;
+  margin: 2rem 0;
 }
 @media (min-width: 830px) {
   main .sections section img {
     order: 1;
   }
 }
-main .sections section p {
+main .sections section .text-section {
+  margin: 0;
+  padding: 0;
   text-align: justify;
+  width: 75%;
 }
 @media (min-width: 830px) {
-  main .sections section p {
+  main .sections section .text-section {
     order: 3;
   }
 }
 main .email-form {
   display: flex;
   flex-direction: column;
+  transform: scale(1.25);
 }
 main .email-form .margin {
   margin: 1rem;
@@ -331,7 +345,7 @@ main .email-form textarea {
   resize: none;
 }
 main .email-form #submit {
-  width: 10rem;
+  width: 14rem;
   margin: 1rem auto;
   padding: 0.25rem 1rem;
   font-size: 2rem;
@@ -340,6 +354,9 @@ main .email-form #submit {
   background: linear-gradient(0deg, #000080, #1c1cc7);
   color: #FFF;
   box-shadow: 0.3rem 0.5rem 0.5rem #000;
+}
+main .email-form #submit:focus {
+  outline: none;
 }
 main .email-form #submit:hover {
   color: #000080;
@@ -350,10 +367,12 @@ main .email-form #submit:hover {
 main .email-form #submit:active {
   transform: translateY(0.3rem);
   box-shadow: 0.15rem 0.3rem 0.3rem #000;
-  background: linear-gradient(180deg, #CDCDCD, #636363);
 }
-main .contact-info {
-  font-size: 1.33rem;
+main .contact-info p {
+  position: relative;
+  top: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 main .person-container {
   display: flex;
@@ -370,7 +389,6 @@ main .person-container .person img {
   width: 100%;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0.35rem 0.5rem 0.5rem #000;
   margin: 0;
   padding: 0;
 }
@@ -418,8 +436,8 @@ main #about-text h3 {
 }
 main #about-text p {
   margin: auto;
-  text-align: justify;
-  width: 85%;
+  text-align: center;
+  width: 75%;
 }
 footer {
   margin-top: 3rem;

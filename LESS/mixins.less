@@ -31,12 +31,15 @@
     padding: 0;
 }
 .btn-styling {
-    width: 10rem;            
+    width: 14rem;            
     margin: 1rem auto;
     padding: 0.25rem 1rem;
     font-size: 2rem;
     border: 1px solid @dark;
     border-radius: 5px;
+    &:focus {
+        outline: none;
+    }
     // box-shadow: ;
     background: linear-gradient(0deg, @primary, @primary-variation);
     color: @light;
@@ -51,7 +54,7 @@
     &:active {
         transform: translateY(0.3rem);
         box-shadow: 0.15rem 0.3rem 0.3rem @dark;
-        background: linear-gradient(180deg, @secondary, @secondary-variation);
+        // background: linear-gradient(180deg, @secondary, @secondary-variation);
 
     }
 }
