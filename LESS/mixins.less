@@ -16,3 +16,35 @@
     border: 1px dashed green;
     
 }
+.test-background {
+    background-color: yellow;
+}
+.test-background-orange {
+    background-color: orange;
+}
+.test-background-purple {
+    background-color: purple;
+}
+
+.margin-padding-reset {
+    margin: 0;
+    padding: 0;
+}
+.btn-styling {
+    width: 10rem;            
+    margin: 1rem auto;
+    padding: 0.25rem 1rem;
+    font-size: 2rem;
+    border: 1px solid @dark;
+    border-radius: 5px;
+    // box-shadow: ;
+    background: linear-gradient(0deg, @primary, @primary-variation);
+    color: @light;
+    // .test-border;
+    &:hover {
+        color: @primary;
+        background: linear-gradient(180deg, @light, @secondary);
+        cursor: pointer;
+        transform: scale(1.15);
+    }
+}

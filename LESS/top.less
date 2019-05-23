@@ -4,7 +4,8 @@
     z-index: 2;
     .flex-column;
     width: 100%;
-    background-color: @primary;
+    // background-color: ;
+    background: linear-gradient(180deg, @primary, @primary-variation);
     border-bottom: 1px solid @light;
     // // .test-border;
     // visibility: hidden;
@@ -31,13 +32,14 @@
             color: @secondary;
             font-size: 2rem;
             font-family: @font2;
+            white-space: nowrap;
             &:hover {
                 color: @light;
                 transform: scale(1.15);
             }
             @media @tablet {
                 margin: 0 1.5rem;
-                font-size: 1.25rem;  
+                font-size: 1.5rem;  
             }
             @media @desktop {
                 margin: 0 3rem;

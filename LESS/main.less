@@ -12,7 +12,7 @@ main {
     //     height: 640px;
     // }
     
-    h2 {
+    .main-h2 {
         position: relative;
         bottom: 1.25rem;
         font-family: @font2;
@@ -20,13 +20,6 @@ main {
         // .test-border;
         @media @desktop {
             font-size: 3.5rem;
-        }
-    }
-    h3 {
-        font-family: @font1;
-        font-size: 2rem;
-        @media @desktop {
-            font-size: 2.5rem;
         }
     }
     p {
@@ -60,22 +53,8 @@ main {
             }
         }
         .btn {
-            width: 10rem;            
+            .btn-styling;
             margin: 1rem;
-            padding: 0.25rem 1rem;
-            font-size: 2rem;
-            border: 1px solid @dark;
-            border-radius: 5px;
-            // box-shadow: ;
-            background-color: @primary;
-            color: @light;
-            // .test-border;
-            &:hover {
-                color: @primary;
-                background-color: @light;
-                cursor: pointer;
-                transform: scale(1.15);
-            }
         }
         @media @desktop, @tablet {
             .flex-row;
@@ -113,13 +92,17 @@ main {
                 margin: 0 1rem;
             }
             h3 {
+                font-family: @font1;
+                font-size: 2rem;
                 @media @desktop {
                     order: 2;
+                    font-size: 2.5rem;
                 }
             }
             img {
                 // .test-border;
-                width: 75%;
+                max-width: 75%;
+                border-radius: 5px;
                 @media @desktop {
                     order: 1;
                 }   
@@ -159,8 +142,7 @@ main {
             resize: none;
         }
         #submit {
-            width: 33%;
-            margin: auto;
+            .btn-styling;
         }
     }
     .contact-info {
@@ -169,35 +151,47 @@ main {
     .person-container {
         .flex-column;
         // .test-border;
-        justify-content: space-between;
         
-        h2 {
-            margin: 1rem;
-            // .test-border;
-            @media @desktop {
-                font-size: 2rem;
-            }
-        } 
-        h3 {
-            margin: 1rem;
-            position: relative;
-            bottom: 1.5rem;
-            // .test-border-green;
-            @media @desktop {
-                font-size: 1.5rem;
-                position: relative;
-                bottom: 0;
-            }
-        }
         .person {
             .flex-column;
             align-items: center;
+            margin: 1rem 0;
+            justify-content: space-between;
             // .test-border-blue;
+            // .test-background;
+            
             img {
                 width: 100%;
                 height: auto;
-                margin: 1rem;
+                border-radius: 5px;
+                .margin-padding-reset;
                 // .test-border-green;  
+            }
+            h2 {
+                justify-self: baseline;
+                width: 100%;
+                .margin-padding-reset;
+                margin-top: 1rem;
+                text-align: inherit;
+                // .test-border;
+                // .test-background-purple;
+                @media @desktop {
+                    font-size: 2rem;
+                }
+            } 
+            h3 {
+                .margin-padding-reset;
+                margin-top: 1rem;
+                // position: relative;
+                // bottom: 1.5rem;
+                // .test-border-green;
+                // .test-background-orange;
+                justify-self: flex-end;
+                @media @desktop {
+                    font-size: 1.5rem;
+                    position: relative;
+                    bottom: 0;
+                }
             }
             @media @desktop {
                 width: 20%;
@@ -207,10 +201,14 @@ main {
         }
         @media @desktop {
             .flex-row;            
-            margin: 0 1.5rem;
+            // margin: 0 1.5rem;
         }
     }
     #about-text {
+        h3 {
+            font-size: 2rem;
+            font-family: @font1;
+        }
         p {
             margin: auto;
             text-align: justify;

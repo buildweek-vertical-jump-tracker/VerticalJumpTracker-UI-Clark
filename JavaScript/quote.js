@@ -41,5 +41,4 @@ class Quotes {
     }
 }
 let quotes = new Quotes(document.querySelectorAll('.quote'), document.querySelector('.quotes'));
-// quotes.forEach(eachQuote => new Quote(eachQuote));
 window.setInterval(quotes.swap.bind(quotes) , 20000);
