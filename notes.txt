@@ -1,2 +1,5 @@
 Base Color: #000080;
 Second Color: #CDCDCD;
+
+font: avenir
+font: impact
