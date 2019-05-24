@@ -395,9 +395,14 @@ main .email-form #submit:active {
   transform: translateY(0.3rem);
   box-shadow: 0.15rem 0.3rem 0.3rem #000;
 }
+@media (max-width: 450px) {
+  main .email-form {
+    transform: scale(0.95);
+  }
+}
 main .contact-info p {
   position: relative;
-  top: 1.5rem;
+  top: 2.5rem;
   font-size: 2rem;
   font-weight: bold;
 }

@@ -143,7 +143,6 @@ main {
             // justify-content: center;
             @media @tablet, @desktop {
                 .flex-row;
-                
             }   
         }
         textarea {
@@ -153,14 +152,18 @@ main {
             .btn-styling;  
         }
         transform: scale(1.25);
+        @media @mobile {
+            transform: scale(0.95);
+        }
         
     }
     .contact-info {
         p {
             position: relative;
-            top: 1.5rem;
+            top: 2.5rem;
             font-size: 2rem;
             font-weight: bold;
+            // margin: 1.5rem 0;
         }
     }
     .person-container {
