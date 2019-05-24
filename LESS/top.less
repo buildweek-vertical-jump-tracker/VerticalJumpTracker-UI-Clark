@@ -4,9 +4,9 @@
     z-index: 2;
     .flex-column;
     width: 100%;
-    // background-color: ;
     background: linear-gradient(180deg, @primary, @primary-variation);
     border-bottom: 1px solid @light;
+    animation: start 1s;
     // .test-border;
     // box-shadow: ;
     h1 {
@@ -41,6 +41,7 @@
             }
             &:active {
                 transform: translateY(0.3rem);
+                // color: @secondary-variation;
             }
             @media @tablet {
                 margin: 0 1.5rem;
@@ -50,6 +51,9 @@
                 margin: 0 3rem;
                 font-size: 1.5rem;
             }
+        }
+        @media @mobile {
+            .flex-column;
         }
         
     }

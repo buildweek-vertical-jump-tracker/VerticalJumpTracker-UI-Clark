@@ -68,7 +68,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation-name: start-fade;
 }
 img {
   max-width: 100%;
@@ -77,6 +76,14 @@ img {
 }
 a {
   text-decoration: none;
+}
+@keyframes start {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 * {
   box-sizing: border-box;
@@ -94,7 +101,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation-name: start-fade;
 }
 img {
   max-width: 100%;
@@ -103,6 +109,14 @@ img {
 }
 a {
   text-decoration: none;
+}
+@keyframes start {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .top {
   position: sticky;
@@ -113,6 +127,7 @@ a {
   width: 100%;
   background: linear-gradient(180deg, hsl(240, 100%, 25%), #1c1cc7);
   border-bottom: 1px solid #FFF;
+  animation: start 1s;
 }
 .top h1 {
   color: #cdcdcd;
@@ -163,6 +178,12 @@ a {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 450px) {
+  .top nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (min-width: 830px), (min-width: 600px) and (max-width: 930px) {
   .top {
     display: flex;
@@ -179,6 +200,7 @@ main {
   align-items: center;
   text-align: center;
   z-index: 1;
+  animation: start 1.5s;
 }
 main .main-h2 {
   position: relative;
@@ -451,6 +473,7 @@ footer {
   width: 100%;
   text-align: center;
   border-top: 1px solid #FFF;
+  animation: start 2s;
 }
 footer a {
   position: relative;
@@ -477,7 +500,7 @@ footer p {
   bottom: 2rem;
   overflow: hidden;
   width: 70%;
-  height: 6rem;
+  height: 10rem;
 }
 .quotes p {
   font-size: 1.5rem;
